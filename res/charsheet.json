@@ -1,0 +1,86 @@
+{
+  "Daten":{
+    "unrollable":{
+      "Name":{
+        "_type":"_string"
+      },
+      "Familie":{
+        "_type":"_string"
+      },
+      "Geschlecht":{
+        "_type":"_enum",
+        "_enumlist":[
+          "m", "w"
+        ]
+      },
+      "Spezies":{
+        "_type":"_enum",
+        "_enumlist":[
+          "Mensch", "Elf", "Halbelf", "Zwerg"
+        ]
+      },
+      "Haarfarbe":"",
+      "Augenfarbe":"",
+      "Kultur":{
+        "_type":"_enum",
+        "_enumlist":[
+          [
+            "Andergaster", "Aranier", "Bornländer", "Fjarninger", "Horasier", "Maraskaner",
+            "Mhanadistani", "Mittelreicher", "Mohas", "Nivesen", "Norbaden",
+            "Nordadventurier", "Nostrier", "Novadis", "Südaventurier", "Svellttaler",
+            "Thorwaler", "Zyklopäer"
+          ],
+          [
+            "Auelfen", "Firnelfen", "Waldelfen"
+          ],
+          [
+            "Ambosszwerge", "Brillantzwerge", "Erzzwerge", "Hügelzwerge"
+          ]
+        ]
+      },
+      "Titel":"",
+      "Sozialstatus":"",
+      "Profession":"",
+      "Geburtsort":"",
+      "Charakteristika":"",
+      "Sonstiges":""
+    },
+    "rollable":{
+      "Alter":0,
+      "Größe":0,
+      "Geburtsmonat":{
+        "_d":20,
+        "_type":"_enum<_string>",
+        "_enumlist":[
+          "Praios",
+          "Praios",
+          "Ronda",
+          "Ronda",
+          "Efferd",
+          "Efferd",
+          "Travia",
+          "Travia",
+          "Boron",
+          "Boron",
+          "Hesinde",
+          "Firum",
+          "Tsa",
+          "Phex",
+          "Phex",
+          "Peraine",
+          "Ingerimm",
+          "Rahja",
+          "Rahja"
+        ]
+      },
+      "Geburtstag":{
+        "_d":[
+          5, 6
+        ],
+        "_type":"_int",
+        "_fromula":"_1*_2"
+      },
+      "Gewicht":0
+    }
+  }
+}
