@@ -21,15 +21,15 @@ public class CharSheetWindow {
     private void setupUI() {
 
         rootPanel = new JPanel();
-        rootPanel.setLayout(new GridLayout(10,1));
+        //rootPanel.setLayout(new BoxLayout(rootPanel, 1));
 
-        JLabel labl = new JLabel("hi");
+        DSBTextField labl = new DSBTextField(true, "Alter");
         rootPanel.add(labl);
 
         rootFrame.setContentPane(this.rootPanel);
         rootFrame.setBackground(Color.cyan);
 
         rootFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        rootFrame.setSize(100,100);
+        rootFrame.setPreferredSize(new Dimension(900,500));
     }
 }
