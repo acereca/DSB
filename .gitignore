@@ -1,0 +1,3 @@
+# files and directories to be ignored for git uploads
+
+out/
