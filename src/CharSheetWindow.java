@@ -23,7 +23,7 @@ public class CharSheetWindow {
         rootPanel = new JPanel();
         //rootPanel.setLayout(new BoxLayout(rootPanel, 1));
 
-        DSBTextField labl = new DSBTextField(true, "Alter");
+        DSBTextField labl = new DSBTextField(true, "Alter", "_int");
         rootPanel.add(labl);
 
         rootFrame.setContentPane(this.rootPanel);
