@@ -1,86 +1,128 @@
 {
   "Daten":{
-    "unrollable":{
-      "Name":{
-        "_type":"_string"
-      },
-      "Familie":{
-        "_type":"_string"
-      },
-      "Geschlecht":{
-        "_type":"_enum",
-        "_enumlist":[
-          "m", "w"
-        ]
-      },
-      "Spezies":{
-        "_type":"_enum",
-        "_enumlist":[
-          "Mensch", "Elf", "Halbelf", "Zwerg"
-        ]
-      },
-      "Haarfarbe":"",
-      "Augenfarbe":"",
-      "Kultur":{
-        "_type":"_enum",
-        "_enumlist":[
-          [
-            "Andergaster", "Aranier", "Bornländer", "Fjarninger", "Horasier", "Maraskaner",
-            "Mhanadistani", "Mittelreicher", "Mohas", "Nivesen", "Norbaden",
-            "Nordadventurier", "Nostrier", "Novadis", "Südaventurier", "Svellttaler",
-            "Thorwaler", "Zyklopäer"
-          ],
-          [
-            "Auelfen", "Firnelfen", "Waldelfen"
-          ],
-          [
-            "Ambosszwerge", "Brillantzwerge", "Erzzwerge", "Hügelzwerge"
-          ]
-        ]
-      },
-      "Titel":"",
-      "Sozialstatus":"",
-      "Profession":"",
-      "Geburtsort":"",
-      "Charakteristika":"",
-      "Sonstiges":""
+    "Name":{
+      "_type":"_string"
     },
-    "rollable":{
-      "Alter":0,
-      "Größe":0,
-      "Geburtsmonat":{
-        "_d":20,
-        "_type":"_enum<_string>",
-        "_enumlist":[
-          "Praios",
-          "Praios",
-          "Ronda",
-          "Ronda",
-          "Efferd",
-          "Efferd",
-          "Travia",
-          "Travia",
-          "Boron",
-          "Boron",
-          "Hesinde",
-          "Firum",
-          "Tsa",
-          "Phex",
-          "Phex",
-          "Peraine",
-          "Ingerimm",
-          "Rahja",
-          "Rahja"
-        ]
-      },
-      "Geburtstag":{
-        "_d":[
-          5, 6
+    "Familie":{
+      "_type":"_string"
+    },
+    "Geschlecht":{
+      "_type":"_enum",
+      "_enumlist":[
+        "m", "w"
+      ]
+    },
+    "Spezies":{
+      "_type":"_enum",
+      "_enumlist":[
+        "Mensch", "Elf", "Halbelf", "Zwerg"
+      ]
+    },
+    "Haarfarbe":{
+      "_type":"_string"
+    },
+    "Augenfarbe":{
+      "_type":"_string"
+    },
+    "Kultur":{
+      "_type":"_enum",
+      "_enumdict": {
+        "Mensch": [
+          "Andergaster",
+          "Aranier",
+          "Bornländer",
+          "Fjarninger",
+          "Horasier",
+          "Maraskaner",
+          "Mhanadistani",
+          "Mittelreicher",
+          "Mohas",
+          "Nivesen",
+          "Norbaden",
+          "Nordadventurier",
+          "Nostrier",
+          "Novadis",
+          "Südaventurier",
+          "Svellttaler",
+          "Thorwaler",
+          "Zyklopäer"
         ],
-        "_type":"_int",
-        "_fromula":"_1*_2"
-      },
-      "Gewicht":0
+        "Elf": [
+          "Auelfen",
+          "Firnelfen",
+          "Waldelfen"
+        ],
+        "Zwerg": [
+          "Ambosszwerge",
+          "Brillantzwerge",
+          "Erzzwerge",
+          "Hügelzwerge"
+        ]
+      }
+    },
+    "Titel":{
+      "_type":"_string"
+    },
+    "Sozialstatus":{
+      "_type":"_string"
+    },
+    "Profession":{
+      "_type":"_string"
+    },
+    "Geburtsort":{
+      "_type":"_string"
+    },
+    "Charakteristika":{
+      "_type":"_string"
+    },
+    "Sonstiges":{
+      "_type":"_string"
+    },
+    "Alter":{
+      "_type":"_int",
+      "_rollable":true
+    },
+    "Größe":{
+      "_type":"_int",
+      "_rollable":true
+    },
+    "Geburtsmonat":{
+      "_d":20,
+      "_rollable":true,
+      "_type":"_enum",
+      "_enumlist":[
+        "Praios",
+        "Praios",
+        "Ronda",
+        "Ronda",
+        "Efferd",
+        "Efferd",
+        "Travia",
+        "Travia",
+        "Boron",
+        "Boron",
+        "Hesinde",
+        "Firum",
+        "Tsa",
+        "Phex",
+        "Phex",
+        "Peraine",
+        "Ingerimm",
+        "Rahja",
+        "Rahja"
+      ]
+    },
+    "Geburtstag":{
+      "_d":[
+        5, 6
+      ],
+      "_rollable":true,
+      "_type":"_int",
+      "_fromula":"_1*_2"
+    },
+    "Gewicht":{
+      "_type":"_int",
+      "_rollable":true
     }
   }
 }
